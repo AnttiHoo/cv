@@ -13,8 +13,7 @@ html {
   font-smoothing: antialiased; }
 
 html,
-body,
-section {
+body {
   height: 100%; }
 
 h1,
@@ -33,6 +32,10 @@ Luokkakohtaiset tyylit
 .main-heading {
   font-size: 96px;
   font-size: 6rem; }
+  @media only screen and (max-width: 768px) {
+    .main-heading {
+      font-size: 48px;
+      font-size: 3rem; } }
   .main-heading::after {
     background: #ff4242;
     content: "";
@@ -42,6 +45,8 @@ Luokkakohtaiset tyylit
     width: 200px; }
 
 .self {
+  margin: 16px auto 32px;
+  margin: 1rem auto 2rem;
   border-width: 1rem;
   border-style: solid;
   border-color: darkcyan; }
