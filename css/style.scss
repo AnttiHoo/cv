@@ -32,6 +32,7 @@ p {
 	color: $sininen;
 	font-family: $sansSerifStack;
 	font-size: 1rem;
+	padding-bottom: 2rem;
 }
 
 
@@ -39,13 +40,14 @@ p {
 Luokkakohtaiset tyylit
 ----------------------------------------- */
 
-.section-container {
-	min-height: 500px;
+.section-bar {
+	min-height: 400px;
 	width: 100%;
 }
 
-.section-two {
-	background-color: $vaaleanHarmaa;
+.section-container {
+	min-height: 500px;
+	width: 100%;
 }
 
 .main-heading {
@@ -68,6 +70,24 @@ Luokkakohtaiset tyylit
 .self {
 	margin: 1rem auto 2rem;
 	@include fullBorder(1rem, solid, $vaaleanHarmaa);
+}
+
+.cta-btn {
+	background-color: $vaaleanVihrea;
+	border-bottom: 5px solid darken($vaaleanVihrea, 25%);
+	color: #222;
+	display: block;
+	font-size: .9rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: .75rem 2.5rem;
+	text-transform: uppercase;
+
+	@include bRadius(5px);
+
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 /*
@@ -117,6 +137,28 @@ nav#main-navigation
 }
 
 
+
+
+
+/*
+section.section-two-bar
+----------------------------------------- */
+
+.section-two-bar {
+	background: url(section-two-bar.jpg) center center fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*
+section.section-two
+----------------------------------------- */
+
+.section-two {
+	background-color: $vaaleanHarmaa;
+}
 
 
 

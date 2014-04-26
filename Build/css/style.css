@@ -28,17 +28,19 @@ h3 {
 p {
   color: #556270;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding-bottom: 2rem; }
 
 /*
 Luokkakohtaiset tyylit
 ----------------------------------------- */
+.section-bar {
+  min-height: 400px;
+  width: 100%; }
+
 .section-container {
   min-height: 500px;
   width: 100%; }
-
-.section-two {
-  background-color: #eaeaea; }
 
 .main-heading {
   font-size: 5rem; }
@@ -58,6 +60,20 @@ Luokkakohtaiset tyylit
   border-width: 1rem;
   border-style: solid;
   border-color: #eaeaea; }
+
+.cta-btn {
+  background-color: #71eeb8;
+  border-bottom: 5px solid #18c87c;
+  color: #222;
+  display: block;
+  font-size: .9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: .75rem 2.5rem;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  .cta-btn:hover {
+    text-decoration: none; }
 
 /*
 header#main-header
@@ -90,3 +106,19 @@ nav#main-navigation
       transition: background-color 500ms ease-in-out; }
       #main-navigation .site-navigation li a:hover {
         background-color: #063c56; }
+
+/*
+section.section-two-bar
+----------------------------------------- */
+.section-two-bar {
+  background: url(../img/section-two-bar.jpg) center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/*
+section.section-two
+----------------------------------------- */
+.section-two {
+  background-color: #eaeaea; }
