@@ -1,5 +1,8 @@
 @import "_vars.scss";
 @import "_mixins.scss";
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700|Roboto+Condensed:400,700);
+
+// $sininen: rgba(85, 98, 112, 1);
 
 /*
 Yleiset tyylit
@@ -19,12 +22,14 @@ body {
 h1,
 h2,
 h3 {
-	font-family: $sansSerifStack;
+	color: $harmaa;
+	font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-weight: normal;
 }
 
 p {
+	color: $sininen;
 	font-family: $sansSerifStack;
-	font-size: 16px;
 	font-size: 1rem;
 }
 
@@ -34,16 +39,14 @@ Luokkakohtaiset tyylit
 ----------------------------------------- */
 
 .main-heading {
-	font-size: 96px;
 	font-size: 6rem;
 
 	@media only screen and (max-width: 768px) {
-		font-size: 48px;
 		font-size: 3rem;
 	}
 
 	&::after {
-		background: $punainen; // Muista vaihtaa myöhemmin
+		background: $sininen; // Muista vaihtaa myöhemmin
 		content: "";
 		display: block;
 		height: 4px;
@@ -53,7 +56,44 @@ Luokkakohtaiset tyylit
 }
 
 .self {
-	margin: 16px auto 32px;
 	margin: 1rem auto 2rem;
 	@include fullBorder(1rem, solid, darkcyan);
+}
+
+/*
+header#main-header
+----------------------------------------- */
+
+#main-header {
+	background-color: rgba(8, 77, 110, .9);
+	border-bottom: 15px solid darken(rgba(8, 77, 110, 1), 5%);
+	min-height: 135px;
+	width: 100%;
+
+	.site-navigation li {
+		border-right: 1px solid rgba(6, 60, 86, 1);
+		margin-left: 0;
+		margin-top: 1rem;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		a {
+			color: rgba(255, 255, 255, 1);
+			padding: .5rem 2.5rem;
+			text-align: center;
+			border-radius: 0;
+
+			-moz-transition: background-color 500ms ease-in-out;
+			-opera-transition: background-color 500ms ease-in-out;
+			-webkit-transition: background-color 500ms ease-in-out;
+			transition: background-color 500ms ease-in-out;
+
+			&:hover {
+				background-color: rgba(6, 60, 86, 1);
+				
+			}
+		}
+	}
 }

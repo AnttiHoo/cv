@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700|Roboto+Condensed:400,700);
 /*
 Värit
 ----------------------------------------- */
@@ -19,25 +20,25 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  color: #999999;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 p {
+  color: #556270;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
   font-size: 1rem; }
 
 /*
 Luokkakohtaiset tyylit
 ----------------------------------------- */
 .main-heading {
-  font-size: 96px;
   font-size: 6rem; }
   @media only screen and (max-width: 768px) {
     .main-heading {
-      font-size: 48px;
       font-size: 3rem; } }
   .main-heading::after {
-    background: #ff4242;
+    background: #556270;
     content: "";
     display: block;
     height: 4px;
@@ -45,8 +46,33 @@ Luokkakohtaiset tyylit
     width: 200px; }
 
 .self {
-  margin: 16px auto 32px;
   margin: 1rem auto 2rem;
   border-width: 1rem;
   border-style: solid;
   border-color: darkcyan; }
+
+/*
+header#main-header
+----------------------------------------- */
+#main-header {
+  background-color: rgba(8, 77, 110, 0.9);
+  border-bottom: 15px solid #063c56;
+  min-height: 135px;
+  width: 100%; }
+  #main-header .site-navigation li {
+    border-right: 1px solid #063c56;
+    margin-left: 0;
+    margin-top: 1rem; }
+    #main-header .site-navigation li:last-child {
+      border-right: none; }
+    #main-header .site-navigation li a {
+      color: white;
+      padding: .5rem 2.5rem;
+      text-align: center;
+      border-radius: 0;
+      -moz-transition: background-color 500ms ease-in-out;
+      -opera-transition: background-color 500ms ease-in-out;
+      -webkit-transition: background-color 500ms ease-in-out;
+      transition: background-color 500ms ease-in-out; }
+      #main-header .site-navigation li a:hover {
+        background-color: #063c56; }
