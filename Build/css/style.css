@@ -40,3 +40,8 @@ Luokkakohtaiset tyylit
     height: 4px;
     margin: 0 auto;
     width: 200px; }
+
+.self {
+  border-width: 1rem;
+  border-style: solid;
+  border-color: darkcyan; }
