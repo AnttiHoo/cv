@@ -1,0 +1,7 @@
+
+
+@mixin fullBorder($value, $style, $color) {
+	border-width: $value;
+	border-style: $style;
+	border-color: $color;
+}

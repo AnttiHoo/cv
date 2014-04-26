@@ -1,4 +1,5 @@
 @import "_vars.scss";
+@import "_mixins.scss";
 
 /*
 Yleiset tyylit
@@ -45,4 +46,8 @@ Luokkakohtaiset tyylit
 		margin: 0 auto;
 		width: 200px;
 	}
+}
+
+.self {
+	@include fullBorder(1rem, solid, darkcyan);
 }
