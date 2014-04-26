@@ -1,0 +1,23 @@
+/*
+Värit
+----------------------------------------- */
+/*
+Fontit
+----------------------------------------- */
+/*
+Yleiset tyylit
+----------------------------------------- */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+html,
+body,
+section {
+  height: 100%; }
+
+h1,
+h2,
+h3 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
