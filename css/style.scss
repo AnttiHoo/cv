@@ -23,8 +23,9 @@ h1,
 h2,
 h3 {
 	color: $harmaa;
-	font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
-	font-weight: normal;
+	font-family:$sansSerifStack;
+	font-weight: 300;
+	margin: 2rem auto;
 }
 
 p {
@@ -38,8 +39,17 @@ p {
 Luokkakohtaiset tyylit
 ----------------------------------------- */
 
+.section-container {
+	min-height: 500px;
+	width: 100%;
+}
+
+.section-two {
+	background-color: $vaaleanHarmaa;
+}
+
 .main-heading {
-	font-size: 6rem;
+	font-size: 5rem;
 
 	@media only screen and (max-width: 768px) {
 		font-size: 3rem;
@@ -57,7 +67,7 @@ Luokkakohtaiset tyylit
 
 .self {
 	margin: 1rem auto 2rem;
-	@include fullBorder(1rem, solid, darkcyan);
+	@include fullBorder(1rem, solid, $vaaleanHarmaa);
 }
 
 /*
@@ -69,11 +79,19 @@ header#main-header
 	border-bottom: 15px solid darken(rgba(8, 77, 110, 1), 5%);
 	min-height: 135px;
 	width: 100%;
+}
+
+/*
+nav#main-navigation
+----------------------------------------- */
+
+#main-navigation {
+	background-color: lighten(rgba(8, 77, 110, .9), 15%);
+	width: 100%;
 
 	.site-navigation li {
 		border-right: 1px solid rgba(6, 60, 86, 1);
-		margin-left: 0;
-		margin-top: 1rem;
+		margin: 0;
 
 		&:last-child {
 			border-right: none;
@@ -81,7 +99,7 @@ header#main-header
 
 		a {
 			color: rgba(255, 255, 255, 1);
-			padding: .5rem 2.5rem;
+			padding: .75rem 2.5rem;
 			text-align: center;
 			border-radius: 0;
 
@@ -97,3 +115,32 @@ header#main-header
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

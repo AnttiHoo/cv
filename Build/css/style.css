@@ -21,8 +21,9 @@ h1,
 h2,
 h3 {
   color: #999999;
-  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-  font-weight: normal; }
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 2rem auto; }
 
 p {
   color: #556270;
@@ -32,8 +33,15 @@ p {
 /*
 Luokkakohtaiset tyylit
 ----------------------------------------- */
+.section-container {
+  min-height: 500px;
+  width: 100%; }
+
+.section-two {
+  background-color: #eaeaea; }
+
 .main-heading {
-  font-size: 6rem; }
+  font-size: 5rem; }
   @media only screen and (max-width: 768px) {
     .main-heading {
       font-size: 3rem; } }
@@ -49,7 +57,7 @@ Luokkakohtaiset tyylit
   margin: 1rem auto 2rem;
   border-width: 1rem;
   border-style: solid;
-  border-color: darkcyan; }
+  border-color: #eaeaea; }
 
 /*
 header#main-header
@@ -59,20 +67,26 @@ header#main-header
   border-bottom: 15px solid #063c56;
   min-height: 135px;
   width: 100%; }
-  #main-header .site-navigation li {
+
+/*
+nav#main-navigation
+----------------------------------------- */
+#main-navigation {
+  background-color: rgba(13, 127, 181, 0.9);
+  width: 100%; }
+  #main-navigation .site-navigation li {
     border-right: 1px solid #063c56;
-    margin-left: 0;
-    margin-top: 1rem; }
-    #main-header .site-navigation li:last-child {
+    margin: 0; }
+    #main-navigation .site-navigation li:last-child {
       border-right: none; }
-    #main-header .site-navigation li a {
+    #main-navigation .site-navigation li a {
       color: white;
-      padding: .5rem 2.5rem;
+      padding: .75rem 2.5rem;
       text-align: center;
       border-radius: 0;
       -moz-transition: background-color 500ms ease-in-out;
       -opera-transition: background-color 500ms ease-in-out;
       -webkit-transition: background-color 500ms ease-in-out;
       transition: background-color 500ms ease-in-out; }
-      #main-header .site-navigation li a:hover {
+      #main-navigation .site-navigation li a:hover {
         background-color: #063c56; }
