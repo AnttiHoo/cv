@@ -22,14 +22,15 @@ body {
 h1,
 h2,
 h3 {
-	color: $harmaa;
-	font-family:$sansSerifStack;
+	color: $musta;
+	font-family:'Rokkitt', Georgia, 'Times New Roman', serif;
 	font-weight: 300;
 	margin: 2rem auto;
+	text-transform: uppercase;
 }
 
 p {
-	color: $sininen;
+	color: $tummanHarmaa;
 	font-family: $sansSerifStack;
 	font-size: 1rem;
 	padding-bottom: 2rem;
@@ -51,7 +52,8 @@ Luokkakohtaiset tyylit
 }
 
 .main-heading {
-	font-size: 5rem;
+	font-size: 3.75rem;
+	font-weight: bold;
 
 	@media only screen and (max-width: 768px) {
 		font-size: 3rem;
@@ -72,20 +74,35 @@ Luokkakohtaiset tyylit
 	@include fullBorder(1rem, solid, $vaaleanHarmaa);
 }
 
+.lead-para {
+	font-size: 1.1875rem;
+}
+
 .cta-btn {
 	background-color: $vaaleanVihrea;
+	border: 1px solid darken($vaaleanVihrea, 25%);
 	border-bottom: 5px solid darken($vaaleanVihrea, 25%);
-	color: #222;
+	color: $musta;
 	display: block;
 	font-size: .9rem;
 	font-weight: bold;
 	letter-spacing: 1px;
+	margin: 0 auto;
+	max-width: 200px;
 	padding: .75rem 2.5rem;
+	text-align: center;
 	text-transform: uppercase;
 
 	@include bRadius(5px);
 
+	-moz-transition: background-color 500ms ease-in-out;
+	-opera-transition: background-color 500ms ease-in-out;
+	-webkit-transition: background-color 500ms ease-in-out;
+	transition: background-color 500ms ease-in-out;
+
 	&:hover {
+		background-color: darken($vaaleanVihrea, 10%);
+		color: $musta;
 		text-decoration: none;
 	}
 }
