@@ -138,26 +138,35 @@ section.section-two
 .section-two {
   background-color: #eaeaea; }
 
-.year .year-info {
-  background-color: rgba(8, 77, 110, 0.9);
-  display: table;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border-width: 10px;
-  border-style: solid;
-  border-color: white; }
-  .year .year-info h3 {
-    color: #eaeaea;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
+.year {
+  margin-bottom: 2rem; }
+  .year .year-info {
+    background-color: rgba(8, 77, 110, 0.9);
+    display: table;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white; }
+    .year .year-info h3 {
+      color: #eaeaea;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
 
-.school .school-info {
-  background-color: #666666;
-  min-height: 150px;
-  border-radius: 5px; }
-  .school .school-info h4 {
-    color: #eaeaea;
-    padding-top: 1rem;
-    padding-bottom: 2rem; }
+.school {
+  margin-bottom: 2rem; }
+  .school .school-info {
+    background: transparent url(use_our_illusion.png) left top repeat;
+    min-height: 150px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4d4d4d; }
+    .school .school-info h4 {
+      color: #666666;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    .school .school-info p {
+      color: #666666; }
