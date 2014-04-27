@@ -20,13 +20,14 @@ body {
 h1,
 h2,
 h3 {
-  color: #999999;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2c2b2b;
+  font-family: 'Rokkitt', Georgia, 'Times New Roman', serif;
   font-weight: 300;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  text-transform: uppercase; }
 
 p {
-  color: #556270;
+  color: #666666;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   padding-bottom: 2rem; }
@@ -43,7 +44,8 @@ Luokkakohtaiset tyylit
   width: 100%; }
 
 .main-heading {
-  font-size: 5rem; }
+  font-size: 3.75rem;
+  font-weight: bold; }
   @media only screen and (max-width: 768px) {
     .main-heading {
       font-size: 3rem; } }
@@ -61,18 +63,31 @@ Luokkakohtaiset tyylit
   border-style: solid;
   border-color: #eaeaea; }
 
+.lead-para {
+  font-size: 1.1875rem; }
+
 .cta-btn {
   background-color: #71eeb8;
+  border: 1px solid #18c87c;
   border-bottom: 5px solid #18c87c;
-  color: #222;
+  color: #2c2b2b;
   display: block;
   font-size: .9rem;
   font-weight: bold;
   letter-spacing: 1px;
+  margin: 0 auto;
+  max-width: 200px;
   padding: .75rem 2.5rem;
+  text-align: center;
   text-transform: uppercase;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -moz-transition: background-color 500ms ease-in-out;
+  -opera-transition: background-color 500ms ease-in-out;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out; }
   .cta-btn:hover {
+    background-color: #43e9a1;
+    color: #2c2b2b;
     text-decoration: none; }
 
 /*
@@ -122,3 +137,27 @@ section.section-two
 ----------------------------------------- */
 .section-two {
   background-color: #eaeaea; }
+
+.year .year-info {
+  background-color: rgba(8, 77, 110, 0.9);
+  display: table;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white; }
+  .year .year-info h3 {
+    color: #eaeaea;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+
+.school .school-info {
+  background-color: #666666;
+  min-height: 150px;
+  border-radius: 5px; }
+  .school .school-info h4 {
+    color: #eaeaea;
+    padding-top: 1rem;
+    padding-bottom: 2rem; }

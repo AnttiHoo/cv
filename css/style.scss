@@ -177,6 +177,42 @@ section.section-two
 	background-color: $vaaleanHarmaa;
 }
 
+.year {
+
+	.year-info {
+		background-color: rgba(8, 77, 110, .9);
+		display: table;
+		height: 150px;
+		width: 150px;
+
+		@include bRadius(50%);
+		@include fullBorder(10px, solid, rgba(255, 255, 255, 1));
+
+		h3 {
+			color: $vaaleanHarmaa;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+
+.school {
+
+	.school-info {
+		background-color: $tummanHarmaa;
+		min-height: 150px;
+
+		@include bRadius(5px);
+
+		h4 {
+			color: $vaaleanHarmaa;
+			padding-top: 1rem;
+			padding-bottom: 2rem;
+		}
+	}
+}
+
 
 
 
