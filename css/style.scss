@@ -153,7 +153,9 @@ nav#main-navigation
 	}
 }
 
-
+/*
+section.section-one
+----------------------------------------- */
 
 
 
@@ -219,6 +221,18 @@ section.section-two
 		p {
 			color: $tummanHarmaa;
 		}
+	}
+}
+
+/*
+section.section-two-one
+----------------------------------------- */
+
+.section-two-one {
+	background-color: $musta;
+
+	.main-heading {
+		color: $tummanHarmaa;
 	}
 }
 

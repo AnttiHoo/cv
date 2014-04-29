@@ -123,6 +123,9 @@ nav#main-navigation
         background-color: #063c56; }
 
 /*
+section.section-one
+----------------------------------------- */
+/*
 section.section-two-bar
 ----------------------------------------- */
 .section-two-bar {
@@ -170,3 +173,11 @@ section.section-two
       padding-bottom: 1rem; }
     .school .school-info p {
       color: #666666; }
+
+/*
+section.section-two-one
+----------------------------------------- */
+.section-two-one {
+  background-color: #2c2b2b; }
+  .section-two-one .main-heading {
+    color: #666666; }
