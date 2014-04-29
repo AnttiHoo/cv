@@ -123,8 +123,17 @@ nav#main-navigation
         background-color: #063c56; }
 
 /*
-section.section-one
+section.section-one-one
 ----------------------------------------- */
+.section-one-one {
+  background-color: #eaeaea;
+  min-height: 400px; }
+  .section-one-one .lang {
+    margin: 1.5rem auto 2rem; }
+  .section-one-one h3 {
+    border-bottom: 1px solid #a6a6a6;
+    padding-bottom: .75rem; }
+
 /*
 section.section-two-bar
 ----------------------------------------- */

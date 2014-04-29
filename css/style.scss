@@ -154,10 +154,22 @@ nav#main-navigation
 }
 
 /*
-section.section-one
+section.section-one-one
 ----------------------------------------- */
 
+.section-one-one {
+	background-color: $vaaleanHarmaa;
+	min-height: 400px;
 
+	.lang {
+		margin: 1.5rem auto 2rem;
+	}
+
+	h3 {
+		border-bottom: 1px solid lighten($tummanHarmaa, 25%);
+		padding-bottom: .75rem;
+	}
+}
 
 /*
 section.section-two-bar
