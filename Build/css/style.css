@@ -90,6 +90,20 @@ Luokkakohtaiset tyylit
     color: #2c2b2b;
     text-decoration: none; }
 
+.body-link {
+  border-bottom: 2px solid #f16529;
+  color: #0d7fb5;
+  font-weight: bold;
+  padding-bottom: .25rem;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; }
+  .body-link:hover {
+    border-bottom: 2px solid #0d7fb5;
+    color: #f16529;
+    text-decoration: none; }
+
 /*
 header#main-header
 ----------------------------------------- */
