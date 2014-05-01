@@ -36,6 +36,11 @@ p {
 	padding-bottom: 2rem;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 
 /*
 Luokkakohtaiset tyylit
@@ -207,6 +212,10 @@ section.section-two
 
 .section-two {
 	background-color: $vaaleanHarmaa;
+
+	@media only screen and (max-width: 991px) {
+		background-color: rgba(255, 255, 255, 1);
+	}
 }
 
 .year {
@@ -236,7 +245,7 @@ section.section-two
 	margin-bottom: 2rem;
 
 	.school-info {
-		background: transparent url(use_our_illusion.png) left top repeat;
+		background-color: transparent;
 		min-height: 150px;
 
 		@include bRadius(5px);
@@ -265,6 +274,73 @@ section.section-two-one
 		color: $tummanHarmaa;
 	}
 }
+
+.tech-info {
+	list-style: none;
+
+	li {
+		color: $vaaleanHarmaa;
+		margin-bottom: .5rem;
+		position: relative;
+
+		&:nth-child(even) {
+			background-color: $oranssi;
+			height: 40px;
+		}
+
+		&:last-child {
+			margin-bottom: 2rem;
+		}
+
+		.bar {
+			background-color: darken($oranssi, 15%);
+			height: 36px;
+			left: 2px;
+			position: absolute;
+			top: 2px;
+			width: 0;
+		}
+
+		.bar-html {
+			-moz-animation: html_palkki 750ms linear forwards;
+			-o-animation: html_palkki 750ms linear forwards;
+			-webkit-animation: html_palkki 750ms linear forwards;
+			animation: html_palkki 750ms linear forwards;
+		}
+
+		.bar-css {
+			-moz-animation: css_palkki 750ms linear 500ms forwards;
+			-o-animation: css_palkki 750ms linear 500ms forwards;
+			-webkit-animation: css_palkki 750ms linear 500ms forwards;
+			animation: css_palkki 750ms linear 500ms forwards;
+		}
+
+		.bar-js {
+			-moz-animation: js_palkki 750ms linear 1000ms forwards;
+			-o-animation: js_palkki 750ms linear 1000ms forwards;
+			-webkit-animation: js_palkki 750ms linear 1000ms forwards;
+			animation: js_palkki 750ms linear 1000ms forwards;
+		}
+
+		.bar-wp {
+			-moz-animation: wp_palkki 750ms linear 1500ms forwards;
+			-o-animation: wp_palkki 750ms linear 1500ms forwards;
+			-webkit-animation: wp_palkki 750ms linear 1500ms forwards;
+			animation: wp_palkki 750ms linear 1500ms forwards;
+		}
+
+		.bar-ps {
+			-moz-animation: ps_palkki 750ms linear 2000ms forwards;
+			-o-animation: ps_palkki 750ms linear 2000ms forwards;
+			-webkit-animation: ps_palkki 750ms linear 2000ms forwards;
+			animation: ps_palkki 750ms linear 2000ms forwards;
+		}
+	}
+}
+
+
+
+
 
 
 

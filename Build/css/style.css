@@ -32,6 +32,10 @@ p {
   font-size: 1rem;
   padding-bottom: 2rem; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
 /*
 Luokkakohtaiset tyylit
 ----------------------------------------- */
@@ -163,6 +167,9 @@ section.section-two
 ----------------------------------------- */
 .section-two {
   background-color: #eaeaea; }
+  @media only screen and (max-width: 991px) {
+    .section-two {
+      background-color: white; } }
 
 .year {
   margin-bottom: 2rem; }
@@ -184,7 +191,7 @@ section.section-two
 .school {
   margin-bottom: 2rem; }
   .school .school-info {
-    background: transparent url(use_our_illusion.png) left top repeat;
+    background-color: transparent;
     min-height: 150px;
     border-radius: 5px;
     border-width: 5px;
@@ -204,3 +211,47 @@ section.section-two-one
   background-color: #2c2b2b; }
   .section-two-one .main-heading {
     color: #666666; }
+
+.tech-info {
+  list-style: none; }
+  .tech-info li {
+    color: #eaeaea;
+    margin-bottom: .5rem;
+    position: relative; }
+    .tech-info li:nth-child(even) {
+      background-color: #f16529;
+      height: 40px; }
+    .tech-info li:last-child {
+      margin-bottom: 2rem; }
+    .tech-info li .bar {
+      background-color: #c1430d;
+      height: 36px;
+      left: 2px;
+      position: absolute;
+      top: 2px;
+      width: 0; }
+    .tech-info li .bar-html {
+      -moz-animation: html_palkki 750ms linear forwards;
+      -o-animation: html_palkki 750ms linear forwards;
+      -webkit-animation: html_palkki 750ms linear forwards;
+      animation: html_palkki 750ms linear forwards; }
+    .tech-info li .bar-css {
+      -moz-animation: css_palkki 750ms linear 500ms forwards;
+      -o-animation: css_palkki 750ms linear 500ms forwards;
+      -webkit-animation: css_palkki 750ms linear 500ms forwards;
+      animation: css_palkki 750ms linear 500ms forwards; }
+    .tech-info li .bar-js {
+      -moz-animation: js_palkki 750ms linear 1000ms forwards;
+      -o-animation: js_palkki 750ms linear 1000ms forwards;
+      -webkit-animation: js_palkki 750ms linear 1000ms forwards;
+      animation: js_palkki 750ms linear 1000ms forwards; }
+    .tech-info li .bar-wp {
+      -moz-animation: wp_palkki 750ms linear 1500ms forwards;
+      -o-animation: wp_palkki 750ms linear 1500ms forwards;
+      -webkit-animation: wp_palkki 750ms linear 1500ms forwards;
+      animation: wp_palkki 750ms linear 1500ms forwards; }
+    .tech-info li .bar-ps {
+      -moz-animation: ps_palkki 750ms linear 2000ms forwards;
+      -o-animation: ps_palkki 750ms linear 2000ms forwards;
+      -webkit-animation: ps_palkki 750ms linear 2000ms forwards;
+      animation: ps_palkki 750ms linear 2000ms forwards; }

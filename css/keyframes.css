@@ -1,0 +1,148 @@
+/*
+Animoidut palkit
+----------------------------------------- */
+
+/* HTML-palkki */
+
+@-moz-keyframes html_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+@-o-keyframes html_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+@-webkit-keyframes html_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+@keyframes html_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+/* CSS-palkki */
+
+@-moz-keyframes css_palkki {
+
+	from   {width: 0;}
+	to   {width: 82%;}
+}
+
+@-o-keyframes css_palkki {
+
+	from   {width: 0;}
+	to   {width: 82%;}
+}
+
+@-webkit-keyframes css_palkki {
+
+	from   {width: 0;}
+	to   {width: 82%;}
+}
+
+@keyframes css_palkki {
+
+	from   {width: 0;}
+	to   {width: 82%;}
+}
+
+/* JS-palkki */
+
+@-moz-keyframes js_palkki {
+
+	from   {width: 0;}
+	to   {width: 45%;}
+}
+
+@-o-keyframes js_palkki {
+
+	from   {width: 0;}
+	to   {width: 45%;}
+}
+
+@-webkit-keyframes js_palkki {
+
+	from   {width: 0;}
+	to   {width: 45%;}
+}
+
+@keyframes js_palkki {
+
+	from   {width: 0;}
+	to   {width: 45%;}
+}
+
+/* WP-palkki */
+
+@-moz-keyframes wp_palkki {
+
+	from   {width: 0;}
+	to   {width: 40%;}
+}
+
+@-o-keyframes wp_palkki {
+
+	from   {width: 0;}
+	to   {width: 40%;}
+}
+
+@-webkit-keyframes wp_palkki {
+
+	from   {width: 0;}
+	to   {width: 40%;}
+}
+
+@keyframes wp_palkki {
+
+	from   {width: 0;}
+	to   {width: 40%;}
+}
+
+/* PS-palkki */
+
+@-moz-keyframes ps_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+@-o-keyframes ps_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+@-webkit-keyframes ps_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+@keyframes ps_palkki {
+
+	from   {width: 0;}
+	to   {width: 70%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
