@@ -19,11 +19,15 @@ body {
 	height: 100%;
 }
 
+body {
+	height: 4500px;
+}
+
 h1,
 h2,
 h3 {
 	color: $musta;
-	font-family:'Rokkitt', Georgia, 'Times New Roman', serif;
+	font-family: $serifStack;
 	font-weight: 300;
 	margin: 2rem auto;
 	text-transform: uppercase;
@@ -41,19 +45,35 @@ ul {
 	padding: 0;
 }
 
+::selection {
+	background-color: rgba(35, 138, 187, 1);
+	color: $vaaleanHarmaa;
+}
+
+::-moz-selection {
+	background-color: rgba(35, 138, 187, 1);
+}
+
 
 /*
 Luokkakohtaiset tyylit
 ----------------------------------------- */
 
 .section-bar {
-	min-height: 400px;
+	min-height: 450px;
 	width: 100%;
 }
 
 .section-container {
 	min-height: 500px;
 	width: 100%;
+}
+
+.glyphicon {
+	color: rgba(32, 94, 124, 1);
+	display: block;
+	font-size: 3rem;
+	margin-bottom: .5rem;
 }
 
 .main-heading {
@@ -72,6 +92,16 @@ Luokkakohtaiset tyylit
 		margin: 0 auto;
 		width: 200px;
 	}
+}
+
+.sub-heading {
+	border-bottom: 1px solid lighten($tummanHarmaa, 25%);
+	color: $tummanHarmaa;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	padding-bottom: .75rem; 
+	text-transform: none;
 }
 
 .self {
@@ -116,7 +146,7 @@ Luokkakohtaiset tyylit
 	border-bottom: 2px solid $oranssi;
 	color: lighten(rgba(8, 77, 110, 1), 15%);
 	font-weight: bold;
-	padding-bottom: .25rem;
+	padding-bottom: .075rem;
 	
 	-moz-transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
@@ -128,6 +158,14 @@ Luokkakohtaiset tyylit
 		color: $oranssi;
 		text-decoration: none;
 	}
+}
+
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	height: 64px;  /* Height of image */
+	width: 64px; /* Width of image */
+	background: url(top.png) no-repeat;
 }
 
 /*
@@ -148,6 +186,7 @@ nav#main-navigation
 #main-navigation {
 	background-color: lighten(rgba(8, 77, 110, .9), 15%);
 	width: 100%;
+	z-index: 10000;
 
 	.site-navigation li {
 		border-right: 1px solid rgba(6, 60, 86, 1);
@@ -183,6 +222,10 @@ section.section-one-one
 .section-one-one {
 	background-color: $vaaleanHarmaa;
 	min-height: 400px;
+
+	.devices {
+		margin-bottom: 2rem;
+	}
 
 	.lang {
 		margin: 1.5rem auto 2rem;
@@ -271,7 +314,15 @@ section.section-two-one
 	background-color: $musta;
 
 	.main-heading {
-		color: $tummanHarmaa;
+		color: $vaaleanHarmaa;
+
+		&::after {
+			background-color: $vaaleanVihrea;
+		}
+	}
+
+	p {
+		color: $vaaleanHarmaa;
 	}
 }
 
@@ -292,6 +343,31 @@ section.section-two-one
 			margin-bottom: 2rem;
 		}
 
+		label {
+			float: right;
+		}
+
+		.html-percentage {
+			padding-right: 20%;
+		}
+
+		.css-percentage {
+			padding-right: 13%;
+		}
+
+		.js-percentage {
+			padding-right: 50%;
+		}
+
+		.wp-percentage {
+			padding-right: 55%;
+		}
+
+		.ps-percentage {
+			padding-right: 25%;
+		}
+
+
 		.bar {
 			background-color: darken($oranssi, 15%);
 			height: 36px;
@@ -309,33 +385,146 @@ section.section-two-one
 		}
 
 		.bar-css {
-			-moz-animation: css_palkki 750ms linear 500ms forwards;
-			-o-animation: css_palkki 750ms linear 500ms forwards;
-			-webkit-animation: css_palkki 750ms linear 500ms forwards;
-			animation: css_palkki 750ms linear 500ms forwards;
+			-moz-animation: css_palkki 750ms linear forwards;
+			-o-animation: css_palkki 750ms linear forwards;
+			-webkit-animation: css_palkki 750ms linear forwards;
+			animation: css_palkki 750ms linear forwards;
 		}
 
 		.bar-js {
-			-moz-animation: js_palkki 750ms linear 1000ms forwards;
-			-o-animation: js_palkki 750ms linear 1000ms forwards;
-			-webkit-animation: js_palkki 750ms linear 1000ms forwards;
-			animation: js_palkki 750ms linear 1000ms forwards;
+			-moz-animation: js_palkki 750ms linear forwards;
+			-o-animation: js_palkki 750ms linear forwards;
+			-webkit-animation: js_palkki 750ms linear forwards;
+			animation: js_palkki 750ms linear forwards;
 		}
 
 		.bar-wp {
-			-moz-animation: wp_palkki 750ms linear 1500ms forwards;
-			-o-animation: wp_palkki 750ms linear 1500ms forwards;
-			-webkit-animation: wp_palkki 750ms linear 1500ms forwards;
-			animation: wp_palkki 750ms linear 1500ms forwards;
+			-moz-animation: wp_palkki 750ms linear forwards;
+			-o-animation: wp_palkki 750ms linear forwards;
+			-webkit-animation: wp_palkki 750ms linear forwards;
+			animation: wp_palkki 750ms linear forwards;
 		}
 
 		.bar-ps {
-			-moz-animation: ps_palkki 750ms linear 2000ms forwards;
-			-o-animation: ps_palkki 750ms linear 2000ms forwards;
-			-webkit-animation: ps_palkki 750ms linear 2000ms forwards;
-			animation: ps_palkki 750ms linear 2000ms forwards;
+			-moz-animation: ps_palkki 750ms linear forwards;
+			-o-animation: ps_palkki 750ms linear forwards;
+			-webkit-animation: ps_palkki 750ms linear forwards;
+			animation: ps_palkki 750ms linear forwards;
 		}
 	}
+}
+
+/*
+section.section-three-bar
+----------------------------------------- */
+
+.section-three-bar {
+	background: url(section-three-bar.jpg) center center fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*
+section.section-three
+----------------------------------------- */
+
+.section-three {
+	margin-bottom: 2rem;
+
+	.bx-wrapper .bx-viewport {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border:  5px solid #fff;
+		left: -5px;
+		background: transparent;
+	
+		/*fix other elements on the page moving (on Chrome)*/
+		-webkit-transform: translatez(0);
+		-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+	}
+
+	.bx-wrapper .bx-prev {
+		left: 0;
+		background: url(images/prev.png) no-repeat;
+	}
+
+	.bx-wrapper .bx-next {
+		right: 0;
+		background: url(images/next.png) no-repeat;
+	}
+
+	.bx-wrapper .bx-prev:hover {
+		background-position: 0 0;
+	}
+
+	.bx-wrapper .bx-next:hover {
+		background-position: 0 0;
+	}
+
+	.bx-wrapper .bx-controls-direction a {
+		position: absolute;
+		top: 50%;
+		margin-top: -32px;
+		outline: 0;
+		width: 64px;
+		height: 64px;
+		text-indent: -9999px;
+		z-index: 9999;
+	}
+
+	.slide-container {
+		min-height: 500px;
+
+		.tag-list-container {
+			width: 200px;
+
+			.tags {
+				list-style: none;
+
+					li {
+						color: $tummanHarmaa;
+						margin-bottom: .75rem;
+						max-width: 200px;
+						padding: .35rem 0;
+						text-align: center;
+						@include fullBorder(1px, solid, darken($vaaleanHarmaa, 25%));
+
+						&:last-child {
+							margin-bottom: 2rem;
+						}
+				}
+			}
+		}
+	}
+}
+
+/*
+section.section-four-bar
+----------------------------------------- */
+
+.section-four-bar {
+
+	#map {
+		height: 450px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+/*
+section.section-four
+----------------------------------------- */
+
+.section-four {
+	background-color: $vaaleanHarmaa;
+	
 }
 
 

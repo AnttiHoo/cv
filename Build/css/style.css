@@ -17,11 +17,14 @@ html,
 body {
   height: 100%; }
 
+body {
+  height: 4500px; }
+
 h1,
 h2,
 h3 {
   color: #2c2b2b;
-  font-family: 'Rokkitt', Georgia, 'Times New Roman', serif;
+  font-family: "Rokkitt", Georgia, Baskerville, "Times New Roman", serif;
   font-weight: 300;
   margin: 2rem auto;
   text-transform: uppercase; }
@@ -36,16 +39,29 @@ ul {
   margin: 0;
   padding: 0; }
 
+::selection {
+  background-color: #238abb;
+  color: whitesmoke; }
+
+::-moz-selection {
+  background-color: #238abb; }
+
 /*
 Luokkakohtaiset tyylit
 ----------------------------------------- */
 .section-bar {
-  min-height: 400px;
+  min-height: 450px;
   width: 100%; }
 
 .section-container {
   min-height: 500px;
   width: 100%; }
+
+.glyphicon {
+  color: #205e7c;
+  display: block;
+  font-size: 3rem;
+  margin-bottom: .5rem; }
 
 .main-heading {
   font-size: 3.75rem;
@@ -61,11 +77,20 @@ Luokkakohtaiset tyylit
     margin: 0 auto;
     width: 200px; }
 
+.sub-heading {
+  border-bottom: 1px solid #a6a6a6;
+  color: #666666;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: .75rem;
+  text-transform: none; }
+
 .self {
   margin: 1rem auto 2rem;
   border-width: 1rem;
   border-style: solid;
-  border-color: #eaeaea; }
+  border-color: whitesmoke; }
 
 .lead-para {
   font-size: 1.1875rem; }
@@ -98,7 +123,7 @@ Luokkakohtaiset tyylit
   border-bottom: 2px solid #f16529;
   color: #0d7fb5;
   font-weight: bold;
-  padding-bottom: .25rem;
+  padding-bottom: .075rem;
   -moz-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
   -webkit-transition: all 500ms ease-in-out;
@@ -107,6 +132,15 @@ Luokkakohtaiset tyylit
     border-bottom: 2px solid #0d7fb5;
     color: #f16529;
     text-decoration: none; }
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  height: 64px;
+  /* Height of image */
+  width: 64px;
+  /* Width of image */
+  background: url(../img/top.png) no-repeat; }
 
 /*
 header#main-header
@@ -122,7 +156,8 @@ nav#main-navigation
 ----------------------------------------- */
 #main-navigation {
   background-color: rgba(13, 127, 181, 0.9);
-  width: 100%; }
+  width: 100%;
+  z-index: 10000; }
   #main-navigation .site-navigation li {
     border-right: 1px solid #063c56;
     margin: 0; }
@@ -144,8 +179,10 @@ nav#main-navigation
 section.section-one-one
 ----------------------------------------- */
 .section-one-one {
-  background-color: #eaeaea;
+  background-color: whitesmoke;
   min-height: 400px; }
+  .section-one-one .devices {
+    margin-bottom: 2rem; }
   .section-one-one .lang {
     margin: 1.5rem auto 2rem; }
   .section-one-one h3 {
@@ -166,7 +203,7 @@ section.section-two-bar
 section.section-two
 ----------------------------------------- */
 .section-two {
-  background-color: #eaeaea; }
+  background-color: whitesmoke; }
   @media only screen and (max-width: 991px) {
     .section-two {
       background-color: white; } }
@@ -183,7 +220,7 @@ section.section-two
     border-style: solid;
     border-color: white; }
     .year .year-info h3 {
-      color: #eaeaea;
+      color: whitesmoke;
       display: table-cell;
       text-align: center;
       vertical-align: middle; }
@@ -210,12 +247,16 @@ section.section-two-one
 .section-two-one {
   background-color: #2c2b2b; }
   .section-two-one .main-heading {
-    color: #666666; }
+    color: whitesmoke; }
+    .section-two-one .main-heading::after {
+      background-color: #71eeb8; }
+  .section-two-one p {
+    color: whitesmoke; }
 
 .tech-info {
   list-style: none; }
   .tech-info li {
-    color: #eaeaea;
+    color: whitesmoke;
     margin-bottom: .5rem;
     position: relative; }
     .tech-info li:nth-child(even) {
@@ -223,6 +264,18 @@ section.section-two-one
       height: 40px; }
     .tech-info li:last-child {
       margin-bottom: 2rem; }
+    .tech-info li label {
+      float: right; }
+    .tech-info li .html-percentage {
+      padding-right: 20%; }
+    .tech-info li .css-percentage {
+      padding-right: 13%; }
+    .tech-info li .js-percentage {
+      padding-right: 50%; }
+    .tech-info li .wp-percentage {
+      padding-right: 55%; }
+    .tech-info li .ps-percentage {
+      padding-right: 25%; }
     .tech-info li .bar {
       background-color: #c1430d;
       height: 36px;
@@ -236,22 +289,102 @@ section.section-two-one
       -webkit-animation: html_palkki 750ms linear forwards;
       animation: html_palkki 750ms linear forwards; }
     .tech-info li .bar-css {
-      -moz-animation: css_palkki 750ms linear 500ms forwards;
-      -o-animation: css_palkki 750ms linear 500ms forwards;
-      -webkit-animation: css_palkki 750ms linear 500ms forwards;
-      animation: css_palkki 750ms linear 500ms forwards; }
+      -moz-animation: css_palkki 750ms linear forwards;
+      -o-animation: css_palkki 750ms linear forwards;
+      -webkit-animation: css_palkki 750ms linear forwards;
+      animation: css_palkki 750ms linear forwards; }
     .tech-info li .bar-js {
-      -moz-animation: js_palkki 750ms linear 1000ms forwards;
-      -o-animation: js_palkki 750ms linear 1000ms forwards;
-      -webkit-animation: js_palkki 750ms linear 1000ms forwards;
-      animation: js_palkki 750ms linear 1000ms forwards; }
+      -moz-animation: js_palkki 750ms linear forwards;
+      -o-animation: js_palkki 750ms linear forwards;
+      -webkit-animation: js_palkki 750ms linear forwards;
+      animation: js_palkki 750ms linear forwards; }
     .tech-info li .bar-wp {
-      -moz-animation: wp_palkki 750ms linear 1500ms forwards;
-      -o-animation: wp_palkki 750ms linear 1500ms forwards;
-      -webkit-animation: wp_palkki 750ms linear 1500ms forwards;
-      animation: wp_palkki 750ms linear 1500ms forwards; }
+      -moz-animation: wp_palkki 750ms linear forwards;
+      -o-animation: wp_palkki 750ms linear forwards;
+      -webkit-animation: wp_palkki 750ms linear forwards;
+      animation: wp_palkki 750ms linear forwards; }
     .tech-info li .bar-ps {
-      -moz-animation: ps_palkki 750ms linear 2000ms forwards;
-      -o-animation: ps_palkki 750ms linear 2000ms forwards;
-      -webkit-animation: ps_palkki 750ms linear 2000ms forwards;
-      animation: ps_palkki 750ms linear 2000ms forwards; }
+      -moz-animation: ps_palkki 750ms linear forwards;
+      -o-animation: ps_palkki 750ms linear forwards;
+      -webkit-animation: ps_palkki 750ms linear forwards;
+      animation: ps_palkki 750ms linear forwards; }
+
+/*
+section.section-three-bar
+----------------------------------------- */
+.section-three-bar {
+  background: url(../img/section-three-bar.jpg) center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/*
+section.section-three
+----------------------------------------- */
+.section-three {
+  margin-bottom: 2rem; }
+  .section-three .bx-wrapper .bx-viewport {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 5px solid #fff;
+    left: -5px;
+    background: transparent;
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0); }
+  .section-three .bx-wrapper .bx-prev {
+    left: 0;
+    background: url(../images/prev.png) no-repeat; }
+  .section-three .bx-wrapper .bx-next {
+    right: 0;
+    background: url(../images/next.png) no-repeat; }
+  .section-three .bx-wrapper .bx-prev:hover {
+    background-position: 0 0; }
+  .section-three .bx-wrapper .bx-next:hover {
+    background-position: 0 0; }
+  .section-three .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    outline: 0;
+    width: 64px;
+    height: 64px;
+    text-indent: -9999px;
+    z-index: 9999; }
+  .section-three .slide-container {
+    min-height: 500px; }
+    .section-three .slide-container .tag-list-container {
+      width: 200px; }
+      .section-three .slide-container .tag-list-container .tags {
+        list-style: none; }
+        .section-three .slide-container .tag-list-container .tags li {
+          color: #666666;
+          margin-bottom: .75rem;
+          max-width: 200px;
+          padding: .35rem 0;
+          text-align: center;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #b5b5b5; }
+          .section-three .slide-container .tag-list-container .tags li:last-child {
+            margin-bottom: 2rem; }
+
+/*
+section.section-four-bar
+----------------------------------------- */
+.section-four-bar #map {
+  height: 450px;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+/*
+section.section-four
+----------------------------------------- */
+.section-four {
+  background-color: whitesmoke; }
