@@ -76,6 +76,20 @@ $(function () {
     });
 });
 
-$(document).ready(function(){
-    $("#main-navigation").sticky({topSpacing:0});
+
+$(document).ready(function() {
+  $('nav#main-navigation').waypoint('sticky',{
+    stuckClass: 'stuck'
   });
+});
+
+
+$(document).ready(function() {
+  $('.site-navigation li a').smoothScroll({
+    speed: 750
+  });
+});
+
+
+
+

@@ -78,10 +78,10 @@
         <div class="row">
 
           <div class="col-md-12">
-            <ul class="nav nav-pills site-navigation">
+            <ul class="site-navigation">
               <li><a href="#">Antti</a></li>
               <li><a href="#">Curriculum Vitae</a></li>
-              <li><a href="#">Projektit</a></li>
+              <li><a href="#projektit">Projektit</a></li>
               <li><a href="#">Ota Yhteyttä</a></li>
             </ul>
           </div>
@@ -99,7 +99,7 @@
     <section class="section-container section-one">
       <div class="container">
         <div class="row">
-          <h2 class="text-center main-heading">Antti Honkanen</h2>
+          <h2 class="text-center main-heading sticky-item">Antti Honkanen</h2>
 
           <div class="col-sm-12 col-md-12 featured">
             <img src="img/self-2.jpg" alt="" class="center-block img-responsive img-circle fadeIn self">
@@ -114,9 +114,8 @@
       <div class="container">
         <div class="row">
 
-          <h2 class="text-center sub-heading"><span class="glyphicon glyphicon-cog"></span>Verkkosivusto</h2>
-
           <div class="col-sm-12 col-md-12">
+            <h2 class="text-center sub-heading">Verkkosivusto</h2>
             <img src="img/devices.png" alt="" class="center-block img-responsive hidden-xs devices">
             <p class="text-center lead-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic, repellat, ad fuga architecto ipsa soluta earum autem quasi doloribus recusandae fugit laborum eius perferendis dolorum. Vero, quae aperiam eos.</p>
           </div>
@@ -216,15 +215,15 @@
 
           <div class="col-sm-6 col-md-6">
             <ul class="tech-info">
-              <li>HTML / HAML<label class="html-percentage">75%</label></li>
+              <li>HTML / HAML<span class="percentage html-percentage">75%</span></li>
               <li><span id="animated-bar-one" class="bar"></span></li>
-              <li>CSS / Sass<label class="css-percentage">82%</label></li>
+              <li>CSS / Sass<span class="percentage css-percentage">82%</span></li>
               <li><span id="animated-bar-two" class="bar"></span></li>
-              <li>JavaScript / jQuery<label class="js-percentage">45%</label></li>
+              <li>JavaScript / jQuery<span class="percentage js-percentage">45%</span></li>
               <li><span id="animated-bar-three" class="bar"></span></li>
-              <li>Wordpress<label class="wp-percentage">40%</label></li>
+              <li>Wordpress<span class="percentage wp-percentage">40%</span></li>
               <li><span id="animated-bar-four" class="bar"></span></li>
-              <li>Photoshop CS6<label class="ps-percentage">70%</label></li>
+              <li>Photoshop CS6<span class="percentage ps-percentage">70%</span></li>
               <li><span id="animated-bar-five" class="bar"></span></li>
             </ul>
           </div>
@@ -243,7 +242,7 @@
 
     
     <section class="hidden-xs hidden-sm section-bar section-three-bar"></section>
-    <section class="section-container section-three">
+    <section id="projektit" class="section-container section-three">
       <div class="container">
         <div class="row">
           <h2 class="text-center main-heading">Projektit</h2>
@@ -333,7 +332,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src='js/jquery.bxslider.min.js'></script>
 <script src='js/jquery.scrollUp.min.js'></script>
-<script src='js/jquery.sticky.js'></script>
+<script src='js/waypoints.min.js'></script>
+<script src='js/waypoints-sticky.js'></script>
+<script src='js/jquery.smooth-scroll.min.js'></script>
 <script src='js/custom.js'></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArViSYML_myeE2jhkIz-qm9MmO-vW2PQQ&sensor=false&extension=.js"></script> 
